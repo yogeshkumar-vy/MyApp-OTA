@@ -44655,19 +44655,12 @@ __d(function (global, require, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, expor
         var checkFailed = false;
         try {
           var update = yield require(_dependencyMap[6]).hotUpdater.checkForUpdate({
-            updateStrategy: 'appVersion',
-            onError: error => {
-              checkFailed = true;
-              console.error('Update check failed:', error);
-              setStatus(`Update check failed: ${error.message}`);
-            }
+            updateStrategy: 'appVersion'
           });
           console.log('Update check result:', update);
           if (!update) {
-            if (!checkFailed) {
-              setStatus('No compatible update available.');
-              _reactNative.Alert.alert('No Update Available', 'There is no compatible update for this app.');
-            }
+            setStatus('No compatible update available.');
+            _reactNative.Alert.alert('No Update Available', 'There is no compatible update for this app.');
             return;
           }
           console.log('Selected release:', {
@@ -44737,31 +44730,6 @@ __d(function (global, require, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, expor
             disabled: isUpdating,
             onPress: applyUpdate
           })
-        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactNative.View, {
-          style: {
-            padding: 30,
-            marginTop: 30,
-            backgroundColor: '#f40c0c',
-            borderRadius: 12,
-            elevation: 3
-          },
-          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactNative.Text, {
-            children: ["Development: ", String(false)]
-          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactNative.Text, {
-            children: ["App version: ", require(_dependencyMap[6]).hotUpdater.getAppVersion()]
-          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactNative.Text, {
-            children: ["Current channel: ", require(_dependencyMap[6]).hotUpdater.getChannel()]
-          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactNative.Text, {
-            children: ["Default channel: ", require(_dependencyMap[6]).hotUpdater.getDefaultChannel()]
-          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_reactNative.Text, {
-            children: ["Current bundle ID: ", require(_dependencyMap[6]).hotUpdater.getBundleId()]
-          }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_reactNative.Text, {
-            style: {
-              fontSize: 24,
-              fontWeight: 'bold'
-            },
-            children: "OTA Update Successful - Supabase"
-          })]
         })]
       })
     });
@@ -44771,7 +44739,7 @@ __d(function (global, require, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, expor
       flex: 1,
       justifyContent: 'center',
       padding: 24,
-      backgroundColor: '#5b6790'
+      backgroundColor: '#735fab'
     },
     title: {
       fontSize: 26,
@@ -44781,7 +44749,7 @@ __d(function (global, require, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, expor
       color: '#737373'
     },
     card: {
-      backgroundColor: '#f8f5f5',
+      backgroundColor: '#c8c8c8',
       padding: 20,
       borderRadius: 12,
       elevation: 3

@@ -1,16 +1,16 @@
 {
-  "bundleId": "01a1ca66-28a3-7a9f-835a-f67c49e72cfe",
+  "bundleId": "01a1cea4-f47b-7274-abf2-06821c066fdc",
   "assets": {
     "index.android.bundle": {
-      "byteSize": 1457652,
-      "fileHash": "0ab686a3e161d6627d28d6149047ec58b8d7df0f7f2d0be2299d7332bf2a016f",
-      "downloadByteSize": 528161,
-      "downloadFileHash": "1f45e0e3e2b3a186edd39b1240600a794383eff12d858c591dae95159a5d8624"
+      "byteSize": 1456681,
+      "fileHash": "4aa54861b0045b2a890d1d8fab81e970587151c8c161074568ec5cd73a19e365",
+      "downloadByteSize": 528121,
+      "downloadFileHash": "61131a996ba4fa762bb7d64007d1a9db5f5757a89b36a4325cec403bd44f90e4"
     }
   },
   "archive": {
-    "downloadFileHash": "176901d54b5ee94d0edb1d17630693b3cedf5bc8f17b69776277030cc3e9aaa8",
-    "downloadByteSize": 527780,
-    "tarByteSize": 1459200
+    "downloadFileHash": "2bbab27126a4f1771cd0015f3327d4cf028f72df34e4c700a3f01797e6d51021",
+    "downloadByteSize": 527726,
+    "tarByteSize": 1458688
   }
 }
