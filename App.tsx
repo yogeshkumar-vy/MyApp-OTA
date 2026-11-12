@@ -181,26 +181,8 @@ export default function App() {
             onPress={applyUpdate}
           />
         </View>
-
-        <View
-          style={{
-            padding: 30,
-            marginTop: 30,
-            backgroundColor: '#f40c0c',
-            borderRadius: 12,
-            elevation: 3,
-          }}
-        >
-          <Text>Development: {String(__DEV__)}</Text>
-          <Text>App version: {hotUpdater.getAppVersion()}</Text>
-          <Text>Current channel: {hotUpdater.getChannel()}</Text>
-          <Text>Default channel: {hotUpdater.getDefaultChannel()}</Text>
-          <Text>Current bundle ID: {hotUpdater.getBundleId()}</Text>
-          <Text style={{ fontSize: 24, fontWeight: 'bold' }}>
-            OTA Update Successful - Supabase
-          </Text>
         </View>
-      </View>
+      
     </SafeAreaProvider>
   );
 }
@@ -210,7 +192,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     padding: 24,
-    backgroundColor: '#5b6790',
+    backgroundColor: '#c7d3fa',
   },
   title: {
     fontSize: 26,
